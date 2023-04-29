@@ -15,11 +15,12 @@ const MONGO_URI = 'mongodb+srv://riddhimanpaul0:X8DyxeNG6PnCGLDZ@worktouttracker
 //connect to db
 mongoose.connect(MONGO_URI)
     .then(()=> {
-        app.listen(process.env.PORT || 4000, () => {
-            console.log(`app is running on port ${process.env.PORT}`);
-        })
+        
     })
     .catch((error) => {
         console.log(error)
     })
 
+app.listen(process.env.PORT || 4000, () => {
+    console.log(`app is running on port ${process.env.PORT}`);
+})
