@@ -9,11 +9,11 @@ app.use(cors())
 
 app.use('/api/workouts', workoutRoutes)
 
-// const MONGO_URI = 'mongodb+srv://riddhimanpaul0:X8DyxeNG6PnCGLDZ@worktouttracker.ffld2dz.mongodb.net/?retryWrites=true&w=majority'
+const MONGO_URI = 'mongodb+srv://riddhimanpaul0:X8DyxeNG6PnCGLDZ@worktouttracker.ffld2dz.mongodb.net/?retryWrites=true&w=majority'
 
 
 //connect to db
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(MONGO_URI)
     .then(()=> {
         
     })
